@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/
+out/
+
+# Generated files
+*.min.js
+*.min.css
+
+# Tauri specific
+src-tauri/target/
+src-tauri/Cargo.lock
+
+# Cache directories
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Environment files
+.env*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Auto-generated route files (TanStack Router)
+src/routeTree.gen.ts
