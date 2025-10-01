@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
 
+import { OnixEditor } from "../../features/editor";
 import { useLayoutStore } from "../../stores/layout-store";
 import { useKeyboardShortcuts } from "../../utils/keyboard-shortcuts";
-import { OnixEditor } from "../editor/onix-editor";
-import { StatusBar } from "./status-bar.tsx";
+import { StatusBar } from "./status-bar";
 
 interface AppShellProps {
   children?: React.ReactNode;
