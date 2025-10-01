@@ -18,6 +18,7 @@ export default [
       "*.min.js",
       "*.min.css",
       "src/routeTree.gen.ts",
+      "src/test-setup.ts",
     ],
   },
   {
@@ -105,6 +106,23 @@ export default [
     rules: {
       "no-console": "off",
       "@typescript-eslint/no-var-requires": "off",
+    },
+  },
+  {
+    files: [
+      "**/*.test.{js,jsx,ts,tsx}",
+      "**/*.spec.{js,jsx,ts,tsx}",
+      "src/__tests__/**/*.{js,jsx,ts,tsx}",
+    ],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.jest,
+      },
+    },
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off",
+      "no-console": "off",
     },
   },
 ];

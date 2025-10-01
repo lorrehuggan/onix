@@ -16,7 +16,7 @@ function RootComponent() {
       <AppShell>
         <Outlet />
       </AppShell>
-      <TanStackRouterDevtools position="top-left" />
+      <TanStackRouterDevtools position="bottom-right" />
     </>
   );
 }

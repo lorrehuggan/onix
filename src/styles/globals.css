@@ -8,10 +8,10 @@
   --color-accent: hsl(190 50% 65%); /* cool cyan */
 
   /* Surfaces & text (dark) */
-  --color-bg: hsl(222 20% 10%); /* page */
-  --color-surface: hsl(222 15% 22%); /* cards */
+  --color-bg: hsl(222 8% 10%); /* page */
+  --color-surface: hsl(222 15% 10%); /* cards */
   --color-elev: hsl(222 18% 19%); /* subtle raised */
-  --color-border: hsl(222 12% 25%);
+  --color-border: hsl(222 2% 15%);
   --color-muted: hsl(220 10% 70%);
   --color-fg: hsl(220 5% 92%);
 
