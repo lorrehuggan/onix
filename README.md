@@ -97,3 +97,47 @@ This project uses Tailwind CSS 4 with dark mode enabled by default:
 - Dark/light mode support
 - Modern color palette with HSL values
 - Automatic class sorting and organization
+
+## Rich Text Editor Features
+
+The application includes a powerful TipTap-based rich text editor with several custom extensions:
+
+### ForceFirstH1 Extension
+
+Ensures the first line of every document is always an H1 heading:
+
+- **Auto-conversion**: Paragraphs or other heading levels are automatically converted to H1
+- **Empty document handling**: Creates an empty H1 when document is cleared
+- **Select all + delete protection**: Restores H1 heading after select all + delete operations
+
+### SmartSelectAll Extension
+
+Implements Obsidian-like select all behavior for better title protection:
+
+- **Smart selection**: When pressing Ctrl+A (Cmd+A on Mac), if the first line is an H1 with content and there's content below it, only content below the H1 is selected
+- **Title protection**: Prevents accidental deletion of document titles
+- **Fallback behavior**: Falls back to normal select all when appropriate
+
+### Key Benefits
+
+- **Consistent document structure**: Every document maintains a proper title structure
+- **User-friendly**: Familiar behavior patterns from popular note-taking apps
+- **Accident prevention**: Reduces risk of accidentally deleting document titles
+- **Rich formatting**: Full TipTap feature set with markdown syntax support
+
+### Usage
+
+```tsx
+import { OnixEditor } from "./src/features/editor";
+
+<OnixEditor
+  content="<h1>Document Title</h1><p>Content goes here...</p>"
+  placeholder="Enter your title"
+  onUpdate={(content, markdown) => {
+    // Handle content updates
+  }}
+  onSave={(content, markdown) => {
+    // Handle save operations (Ctrl+S)
+  }}
+/>;
+```
