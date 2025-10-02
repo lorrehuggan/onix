@@ -18,7 +18,7 @@ export default [
       "*.min.js",
       "*.min.css",
       "src/routeTree.gen.ts",
-      "src/test-setup.ts",
+      "src/__tests__/test-setup.ts",
     ],
   },
   {
